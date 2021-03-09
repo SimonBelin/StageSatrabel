@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Container -->
+        <!-- Container avec marge -->
+        <div class="container" style="background:red;">
+            <h1>Tu connais la différence entre un gars bien et un gars chiant?</h1>
+            <p>le gars chiant il profite pas de ses espaces ou tu sais quoi mettre pas dans ton code pour mettre des vanes à la con</p>
+        </div>
+        <!-- Container qui prenne toutes la largeur -->
+        <div class="container-fluid" style="background:blue;">
+            <h1>Tu connais la différence entre un gars bien et un gars chiant?</h1>
+            <p>le gars chiant il profite pas de ses espaces ou tu sais quoi mettre pas dans ton code pour mettre des vanes à la con</p>
+        </div>
+    <!-- grid system -->
+    <!-- xs < 768px phone : container pas de marge
+    sm >= 768px tablette : container mesure 750px
+    md >= 992px desktop (laptop) : container mesure 970px
+    lg >= 1200px large desktop : container mesure 1170px-->
+        <div class="container">
+            <div class="row">
+                <!-- class block:  col= colonne  md=correspond à la taille du navigateur(catégorie minimal sur lequel on veut du changement) 3=nombre de colonne occupé -->
+                <div id="block1" class="col-md-3 col-lg-5" style="background:yellow;">
+                    <h1>Tu connais la différence entre un gars bien et un gars chiant?</h1>
+                    <p>le gars chiant il profite pas de ses espaces ou tu sais quoi mettre pas dans ton code pour mettre des vanes à la con</p>
+                </div>
+                <div id="block2" class="col-md-9 col-lg-7" style="background:yellowgreen;">
+                    <h1>Tu connais la différence entre un gars bien et un gars chiant?</h1>
+                    <p>le gars chiant il profite pas de ses espaces ou tu sais quoi mettre pas dans ton code pour mettre des vanes à la con</p>
+                </div>
+            </div>
+        </div>
+    <!-- typo -->
+    <!-- class corresponde à des styles de typos mis en place par bootstrap -->
+        <div class="container-fluid">
+            <div class="col">
+                <p>Apocalipse: Voici une petite liste de <span class="text-primary">désagrément</span> qui me font dire que je suis bien <span class="text-success">heureux</span> de ne pas être complotiste pour ne pas pensé à ce genre de chose H24</p>
+                <h1>tsunami <small>1</small></h1>
+                <h2><span class="bg-warning">attaque de zombie</span></h2>
+                <h3>nouvelle ère <mark>glacière</mark></h3>
+                <h4><span class="text-warning">attaque extra-terrestre</span></h4>
+                <h5><span class="text-danger">visite chez ma belle-mère</span></h5>
+            </div>
+        </div>
+    <!-- formulaire -->
+        <div class="container-fluid">
+            <div class="row">
+               <form class="form" style="margin: 50px;" action="">
+                   <div class="form-group">
+                       <label for="name"> Nom d'acteur porno</label>
+                       <input type="text" id="name" class="form-control input-lg">
+                   </div>
+                   <div class="form-group">
+                        <label for="asr"> ASR</label>
+                        <input type="text" id="asr" class="form-control">
+                    </div>
+                    <div class="form-group has-success">
+                        <label for="comment"> Vas-y Mec: balance c'que t'as sur le coeur</label>
+                        <textarea class="form-control" id="comment"></textarea>
+                    </div>
+                    <div class="checkbox">
+                        <label for=""><input type="checkbox"> J'le balance en rap</label>
+                    </div>
+                    <div class="checkbox">
+                       <label for=""><input type="checkbox"> J'le balance en slam</label>
+                    </div>
+                    <div class="checkbox" disabled>
+                        <label for=""><input type="checkbox" value="" disabled> J'le balance en prose</label>
+                    </div>
+                    <button type="submit" class="btn btn-default"> Submit</button>
+                
+               </form>
+
+
+
+                <!-- formulaire  en une ligne-->
+               <div class="row">
+                <form class="form-inline" style="margin: 50px;" action="">
+                    <div style="margin: 20px;" class="form-group">
+                        <label for="name"> Nom d'acteur porno</label>
+                        <input style="margin: 5px;" type="text" id="name" class="form-control">
+                    </div>
+                    <div style="margin: 20px;" class="form-group">
+                         <label for="asr"> ASR</label>
+                         <input style="margin: 5px;" type="text" id="asr" class="form-control">
+                     </div>
+                     <button type="submit" class="btn btn-default"> Submit</button>
+                     <div class="radio">
+                        <label for=""><input type="radio"> J'le balance en rap </label>
+                    </div>
+                    <div class="radio">
+                       <label for=""><input type="radio"> J'le balance en slam </label>
+                    </div>
+                    <div class="radio" disabled>
+                        <label for=""><input type="radio" value="" disabled> J'le balance en prose </label>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <div class="container">
+            <!-- Boutton, class de Boutton et groupe -->
+            <div class="btn-group-vertical">
+                <button type="submit" class="btn btn-danger"> Provoquer la fin du monde</button>
+                <button type="submit" class="btn btn-danger disabled"> Provoquer la fin du monde</button>
+                <button type="submit" class="btn btn-warning btn-lg"> Spoiler usual suspect</button>
+            </div>
+            <button type="submit" class="btn btn-success"> Taper Google sur Google</button>
+            <button type="submit" class="btn btn-primary btn-sm"> Hacker la nasa</button>
+            <button type="submit" class="btn btn-info btn-block"> résoudre une enquète des Expert Miami</button>
+
+            <!-- Mettre une image et la rendre responsive -->
+            <img src="Premiere_photo.jpg" alt="" class="img-rounded img-responsive">
+
+            <!-- existe aussi en rognage
+            <img src="Premiere_photo.jpg" alt="" class="img-circle">
+            <img src="Premiere_photo.jpg" alt="" class="img-thumbmail"> -->
+
+
+            <!-- icon/ liste déroulante-->
+            <button type="submit" class="btn btn-default"> <span class="glyphicon glyphicon-search"></span> Rechercher</button>
+
+            <div class="dropdown">
+                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">pub à parodier</button>
+                    <ul class="dropdown-menu">
+                        <li><a href=""> Keffel</a></li>
+                        <li class="disabled"><a href=""> Kruidvat</a></li>
+                        <li class="divider"></li>
+                        <li><a href=""> Dior</a></li>
+                        <li class="dropdown-header">Bagnole</li>
+                        <li><a href=""> Skoda</a></li>
+                        <li><a href=""> opel</a></li>
+                    </ul>
+
+            </div>
+
+            <!-- tooltip -->
+            <button type="submit" id="special" class="btn btn-default" data-toggle="tooltip" title="tu sais... dans l'internet"> <span class="glyphicon glyphicon-search"></span> Rechercher à nouveau</button>
+        </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <header>
+        <div class="container">
+        
+        <!-- Bar de menu -->
+                <nav class="navbar fixed-top navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-light bg-light ">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="logo.png" alt="" width="30" height="24" class="d-inline-block align-top">
+                    </a>  
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse justify-content-md-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active mx-1">
+                            <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item mx-1">
+                            <a class="nav-link" href="Collapse_tabs.html">Collapse tabs</a>
+                            </li>
+                            <li class="nav-item mx-1">
+                            <a class="nav-link" href="coin_carre.html">Coin carré</a>
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link" href="#">Jason Bourne</a>
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        </div>
+                </nav>
+            
+        </div>
+    </header>
+    <main style="margin-top: 70px;">
+        <!-- bread crumb -->
+        <nav style="--bs-breadcrumb-divider: '>';"aria-label="breadcrumb" >
+            <ol class="breadcrumb" style="border: 1px solid rgb(158, 156, 156);">
+              <li class="breadcrumb-item active"><a href="#">Accueil</a></li>
+            </ol>
+        </nav>
+
+        <!-- Carousel -->
+        <div id="carouselExampleControls" class="carousel slide mb-4" data-bs-touch="false" data-bs-interval="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/Bootstrap/Carousel/James_Bond.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/Bootstrap/Carousel/Jason_Bourne.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/Bootstrap/Carousel/Indiana_Jones.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/Bootstrap/Carousel/Austin_Powers.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+          </div>
+
+        <!-- collapse/ tabs -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Faites gaffe: Il y a une bombe
+                                </button>
+                            </h2>
+                        </div>
+                        
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                            Le fil rouge ou le file bleu.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Déclenchez la fin du monde
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                faut bien une raison pour le sauver après
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Visite chez belle-mère
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                            c'est à peu près pareil.
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>  
+       
+                <div class="col-12 col-sm-6">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">film d'action</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">film de gangster</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">film de guerre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">film romantique</a>
+                                </li>
+                        </ul>
+                        <nav aria-label="Page navigation example">
+                            De nombreux films qualifiés de « films d'action » peuvent être rattachés à d'autres genres cinématographiques. Par exemple, Terminator a été qualifié de « film d'action », mais il s'agit avant tout d'un film de science-fiction, en raison des thèmes qu'il aborde : voyage dans le temps, cyborg, ou encore futur post-apocalyptique. De même, L'Arme fatale est un film policier avant d'être un film d'action, car il comporte une intrigue policière.
+                                <!-- pagination  -->
+                            <ul class="pagination">
+                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                        </nav>
+                </div>
+            </div>
+        </div>  
+         <!-- Cartes  -->
+        <div class="Container">
+            <div class="row">
+                <!-- Une carte commence ici -->
+                <div class="col-12 col-sm-6 col-md-3 mb-3">
+                    <div class="card p-2">
+                        <img src="Carte/Baker.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Simon Baker Balablabla ... Le mentaliste Blabla... Le diable s'habille en prada Balablabla</p>
+                            </div>
+                    </div>
+                </div>
+                <!-- et finit ici -->
+
+                <div class="col-12 col-sm-6 col-md-3 mb-3">
+                    <div class="card p-2">
+                        <img src="Carte/Bruce_Willis.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Bruce_Willis Balablabla die hard Balablabla</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mb-3">
+                    <div class="card p-2">
+                        <img src="Carte/Cary_Grant.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Cary_Grant Balablabla La mort aux trousses etc. Balablabla</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mb-3">
+                    <div class="card p-2">
+                        <img src="Carte/Channing_Tatum.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Channing Tatum Balablabla White house down 21 jumpstreet Balablabla</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mb-3">
+                    <div class="card p-2">
+                        <img src="Carte/Clint_Eastwood.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Clint Eastwood Balablabla dirty Harry le bon la brut et le truand Balablabla</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mb-3">
+                    <div class="card p-2">
+                        <img src="Carte/Schwarzenegger.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Arnold ça m'enerve de taper son nom Balablabla Terminator 2 Last action hero Balablabla</p>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 mb-3">
+                    <div class="card p-2">
+                        <img src="Carte/Simon_Pegg.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Simon Pegg Balablabla Hot fuzz corneto trilogie mission impossible Balablabla</p>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 mb-3">
+                    <div class="card p-2">
+                        <img src="Carte/Stallone.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Boum boum badadam cogne sur le ring des guignols de l'info</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- Modal -->
+    <!-- déclencheur de Modal -->
+       
+        <div class="jumbotron">
+            <h1 class="display-4">Ton heure a sonné</h1>
+            <p class="lead">Phil tu as déclaré la guerre au saloon de l'as de coeur au nom du saloon de l'as de pique... </p>
+            <hr class="my-4">
+            <p>Lucke tu as une bien grande langue pour quelqu'un d'aussi petit...</p>
+            <button type="button" class="btn-lg btn-secondary col-12" style="margin-top: 2rem; margin-bottom: 4rem;" data-toggle="modal" data-target="#exampleModal">Duel de Western</button>
+        </div>
+            
+    <!-- Modal et son contenu -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Pan T'es mort</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>A deux jours de la retraite!</p> 
+                  <label for="email">Indique Ici ton Email pour qu'on t'envoie nos condoléences</label>
+                  <input id="email" class="col-11" type="text">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                  <button type="button" class="btn btn-default">Envoyer</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

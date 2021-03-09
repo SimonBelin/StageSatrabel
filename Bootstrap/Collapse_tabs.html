@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <header>
+        <!-- Bar de menu -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-light bg-light ">
+          <a class="navbar-brand" href="index.html">
+              <img src="logo.png" alt="" width="30" height="24" class="d-inline-block align-top">
+          </a>  
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse justify-content-md-center" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item active mx-1">
+                  <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item mx-1">
+                  <a class="nav-link" href="#">Collapse tabs</a>
+                  </li>
+                  <li class="nav-item mx-1">
+                  <a class="nav-link" href="coin_carre.html">Coin carré</a>
+                  </li>
+                  <li class="nav-item mx-1">
+                      <a class="nav-link" href="#">Jason Bourne</a>
+                  </li>
+                  <li class="nav-item mx-1">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+              </ul>
+              </div>
+        </nav>
+    </header>
+
+
+    <main style="margin: 10px; margin-top:70px">
+
+      <!-- tableau -->
+      <div class="d-none d-sm-block">
+      <!-- sommaire de droite -->
+        <div class="row">
+          <div class="col-3">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Le Silmarillion</a>
+              <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Beren et Lutienne</a>
+              <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Bilbo le Hobbite</a>
+              <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Le Seigneur des Anneaux</a>
+            </div>
+          </div>
+          <!-- conteneur de texte -->
+          <div class="col-9">
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"> Le Silmarillion (titre original : The Silmarillion) est une œuvre de J. R. R. Tolkien, publiée à titre posthume en 1977 par son fils Christopher avec l'aide de Guy Gavriel Kay. Il retrace la genèse et les premiers Âges de l'univers de la Terre du Milieu, cadre des romans Le Hobbit et Le Seigneur des anneaux.
+
+                <!-- pagination -->
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+
+
+              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">Beren et Lúthien (titre original Beren and Lúthien) est un roman de l'écrivain et philologue britannique J. R. R. Tolkien, publié de façon posthume le 1er juin 2017 dans le monde entier. L'ouvrage a été reconstitué par le fils de Tolkien, Christopher à partir de textes inachevés laissés par son père. Les aventures de l'humain Beren Erchamion et de la princesse elfe Lúthien avaient déjà été relatées sous forme d'un résumé dans Le Silmarillion.
+              </div>
+
+              <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">Le Hobbit (The Hobbit) ou Bilbo le Hobbit est un roman de fantasy de l’écrivain britannique J. R. R. Tolkien. Il narre les aventures du hobbit Bilbo (ou Bilbon), entraîné malgré lui par le magicien Gandalf et une compagnie de treize nains dans leur voyage vers la Montagne Solitaire, avec pour but de se réapproprier le trésor volé et gardé par le dragon Smaug.</div>
+              <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">Le Seigneur des anneaux (The Lord of the Rings) est un roman en trois volumes de J. R. R. Tolkien paru en 1954 et 1955.
+
+                Prenant place dans le monde de fiction de la Terre du Milieu, il suit la quête du hobbit Frodon Sacquet, qui doit détruire l'Anneau unique afin que celui-ci ne tombe pas entre les mains de Sauron, le Seigneur des ténèbres. Plusieurs personnages lui viennent en aide, parmi lesquels son jardinier Sam, le mage Gandalf ou encore l'humain Aragorn, héritier d'une longue lignée d'illustres rois.</div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <div class="d-sm-none">
+
+
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Le Silmarillion
+              </button>
+            </h2>
+          </div>
+      
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              Le Silmarillion (titre original : The Silmarillion) est une œuvre de J. R. R. Tolkien, publiée à titre posthume en 1977 par son fils Christopher avec l'aide de Guy Gavriel Kay. Il retrace la genèse et les premiers Âges de l'univers de la Terre du Milieu, cadre des romans Le Hobbit et Le Seigneur des anneaux.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Beren et Lutienne
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              Beren et Lúthien (titre original Beren and Lúthien) est un roman de l'écrivain et philologue britannique J. R. R. Tolkien, publié de façon posthume le 1er juin 2017 dans le monde entier. L'ouvrage a été reconstitué par le fils de Tolkien, Christopher à partir de textes inachevés laissés par son père. Les aventures de l'humain Beren Erchamion et de la princesse elfe Lúthien avaient déjà été relatées sous forme d'un résumé dans Le Silmarillion.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Bilbo le Hobbite
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              Le Hobbit (The Hobbit) ou Bilbo le Hobbit est un roman de fantasy de l’écrivain britannique J. R. R. Tolkien. Il narre les aventures du hobbit Bilbo (ou Bilbon), entraîné malgré lui par le magicien Gandalf et une compagnie de treize nains dans leur voyage vers la Montagne Solitaire, avec pour but de se réapproprier le trésor volé et gardé par le dragon Smaug.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Le Seigneur des anneaux
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              Le Seigneur des anneaux (The Lord of the Rings) est un roman en trois volumes de J. R. R. Tolkien paru en 1954 et 1955.
+              Prenant place dans le monde de fiction de la Terre du Milieu, il suit la quête du hobbit Frodon Sacquet, qui doit détruire l'Anneau unique afin que celui-ci ne tombe pas entre les mains de Sauron, le Seigneur des ténèbres. Plusieurs personnages lui viennent en aide, parmi lesquels son jardinier Sam, le mage Gandalf ou encore l'humain Aragorn, héritier d'une longue lignée d'illustres rois.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
